@@ -7,14 +7,13 @@
 # of the Robot’s active_weapon.
 
 from weapon import Weapon
-import random
 
 class Robot:
 
     def __init__(self, name):
         self.name = name
         self.health = 800
-        self.active_weapon = Weapon("Light Saber",random.randint(50,90) )
+        self.active_weapon = Weapon("Light Saber", 80)
 
 
     def robot_attack(self, dinosaur):

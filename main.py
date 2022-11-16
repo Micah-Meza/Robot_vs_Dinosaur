@@ -60,15 +60,6 @@
 from battlefield import Battlefield
 
 battlefield_1 = Battlefield()
-# battlefield_1.run_game()
-
-print()
-print()
-battlefield_1.display_welcome()
-print()
-print()
-
-
-battlefield_1.battle_phase()
+battlefield_1.run_game()
 
 

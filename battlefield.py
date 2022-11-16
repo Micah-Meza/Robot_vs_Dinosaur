@@ -10,7 +10,12 @@ class Battlefield:
 
 
     def run_game(self):
-        pass
+        print()
+        print()
+        self.display_welcome()
+        self.battle_phase()
+        print()
+        print()
 
 
     def display_welcome(self):
