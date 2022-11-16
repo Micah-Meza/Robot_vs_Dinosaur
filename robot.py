@@ -12,12 +12,18 @@ class Robot:
 
     def __init__(self, name):
         self.name = name
-        self.health = 800
-        self.active_weapon = Weapon()
+        self.health = 100
+        self.active_weapon = Weapon("Light Saber", 50)
 
 
-    def attack(self, dinosaur):
-        pass
+    def robot_attack(self, dinosaur):
+        print(f"{self.name} attacks {dinosaur.name} causing {self.active_weapon.attack_power} damage!")
+        dinosaur_life =  dinosaur.health - self.active_weapon.attack_power
+        dinosaur.health = dinosaur_life
+        print(f"{dinosaur.name} health is now {dinosaur_life}!")
+        print()
+        
+        
         
 
 
