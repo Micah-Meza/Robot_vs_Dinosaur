@@ -13,6 +13,8 @@ class Battlefield:
         print()
         print()
         self.display_welcome()
+        print()
+        print()
         self.battle_phase()
         print()
         print()
